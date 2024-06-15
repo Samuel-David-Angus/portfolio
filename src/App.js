@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import NavBar from './Components/NavBar';
 import AboutMe from './Components/AboutMe';
+import Skills from './Components/Skills';
 
 function App() {
   return (
@@ -9,9 +10,7 @@ function App() {
       <header className="App-header">
         <NavBar /> 
       </header>
-      <main>
-        
-      </main>
+      <Skills></Skills>
     </div>
   );
 }

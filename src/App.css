@@ -53,6 +53,25 @@ h3.inliner, h2.inliner {
   margin-bottom: 1%;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 10px; /* Gap between grid items */
+  padding: 5%;
+}
+
+.column {
+  text-align: left;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #222222;
+}
+
+li {
+  padding: 3%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
