@@ -16,6 +16,7 @@ const router = createBrowserRouter([
     errorElement: <h1>Invalid Page</h1>,
     children: [
       {
+        index: true,
         path: "/AboutMe",
         element: <AboutMe/>
       },
