@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import AboutMe from './Components/AboutMe';
 import Skills from './Components/Skills';
 import Projects from './Components/Projects';
@@ -16,7 +16,10 @@ const router = createBrowserRouter([
     errorElement: <h1>Invalid Page</h1>,
     children: [
       {
-        index: true,
+        index: true,  // This makes it the default child route
+        element: <Navigate to="/AboutMe" replace />
+      },
+      {
         path: "/AboutMe",
         element: <AboutMe/>
       },
