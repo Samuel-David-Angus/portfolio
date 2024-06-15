@@ -1,7 +1,7 @@
 function AboutMe() {
     return <main>
     <div className="Half-Container" id='first'>
-      <img src='../self.jpeg' width={"90%"} />
+      <img src='../self.jpeg' width={"90%"} alt="pic of me"/>
     </div>
     <div className="Half-Container" id='second'>
       <h1>HELLO!</h1>

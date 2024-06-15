@@ -128,7 +128,7 @@ function Projects() {
             <DialogContent
             sx={{height: "40%"}}>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}><img src={selectedProj && selectedProj.projectImg} style={{ maxWidth: '100%', maxHeight: "80%" }}/></Grid>
+                    <Grid item xs={4}><img src={selectedProj && selectedProj.projectImg} style={{ maxWidth: '100%', maxHeight: "80%" }} alt={selectedProj && selectedProj.alt}/></Grid>
                     <Grid item xs={8}>{selectedProj && selectedProj.longDesc ? (
                                 <div dangerouslySetInnerHTML={{ __html: selectedProj.longDesc }} />
                             ) : (
