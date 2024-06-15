@@ -20,9 +20,9 @@ function AboutMe() {
       <br/>
       <br/>
       <p>
-        I currenly study at Cebu Institute of Technology University and 
+        I currently study at Cebu Institute of Technology University and 
         I have experience in developing mobile apps and websites, 
-        both frontend and backend.
+        both frontend and backend. I enjoy solving problems and I'm eager to learn new things.
       </p>
     </div>
   </main>

@@ -1,4 +1,4 @@
-import { Card, CardActionArea, CardContent, CardMedia, Dialog, DialogContent, DialogContentText, DialogTitle, Grid, Link, Typography } from "@mui/material";
+import { Button, Card, CardActionArea, CardContent, CardMedia, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, Link, Typography } from "@mui/material";
 import { useState } from "react";
 
 function Projects() {
@@ -18,7 +18,7 @@ function Projects() {
             image: "https://img.freepik.com/premium-photo/cardano-blockchain-platform_23-2150411956.jpg",
             alt: "WattWiz",
             projectImg: "../wattwizz.png",
-            link: "https://example.com/wattwiz"
+            link: "https://drive.google.com/drive/folders/1yibALBY7CdP540oX6wUEq84IpcagpkRU?usp=sharing"
         },
         {
             name: "FishCab",
@@ -81,7 +81,7 @@ function Projects() {
             image: "https://img.freepik.com/premium-photo/cardano-blockchain-platform_23-2150411956.jpg",
             alt: "Cupid Charm Purge",
             projectImg: "https://img.itch.zone/aW1nLzE0OTM4MjkxLnBuZw==/315x250%23c/cXv46T.png",
-            link: "https://nagusnotamagus.itch.io/cupid"
+            link: "https://drive.google.com/drive/folders/1rqIxlg6ym6jJt8ZkNU4YPhtSgTceNkls?usp=sharing"
         }
         
     ]
@@ -124,10 +124,11 @@ function Projects() {
         maxWidth="lg"
         >
             <DialogTitle>{selectedProj && selectedProj.name}</DialogTitle>
+            
             <DialogContent
             sx={{height: "40%"}}>
                 <Grid container spacing={2}>
-                    <Grid item xs={4}><img src={selectedProj && selectedProj.projectImg} style={{ maxWidth: '100%', height: 'auto' }}/></Grid>
+                    <Grid item xs={4}><img src={selectedProj && selectedProj.projectImg} style={{ maxWidth: '100%', maxHeight: "80%" }}/></Grid>
                     <Grid item xs={8}>{selectedProj && selectedProj.longDesc ? (
                                 <div dangerouslySetInnerHTML={{ __html: selectedProj.longDesc }} />
                             ) : (
@@ -139,9 +140,10 @@ function Projects() {
                             <p>Source code here: <Link href={selectedProj && selectedProj.link}>{selectedProj && selectedProj.link}</Link></p>
                             </Grid>
                 </Grid>
-                
-                
             </DialogContent>
+            <DialogActions>
+                <Button onClick={handleClose}>Close</Button>
+            </DialogActions>
         </Dialog>
     </main>
 }
