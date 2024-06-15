@@ -1,5 +1,49 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Make the App element take up the full viewport height */
+}
+
+.App-header {
+  flex: 0 0 auto; /* Allow the header to take up only as much space as it needs */
+}
+
+main {
+  background-color: black;
+  color: white;
+  width: 100%;
+  flex: 1 0 auto; /* Allow main to grow and fill the remaining space */
+  position: relative; /* For clearfix */
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.Half-Container {
+  text-align: left;
+  float: left;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+#first {
+  background-color: gray;
+  width: 40%;
+  padding: 5%;
+  height: 100%;
+}
+
+#second {
+  width: 60%;
+  padding: 5%;
+}
+
+h3.inliner, h2.inliner {
+  display: inline;
 }
 
 .App-logo {
@@ -14,7 +58,6 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 
 @keyframes App-logo-spin {
   from {

@@ -4,10 +4,10 @@ import '../App.css';
 
 function NavBar() {
     return <div className="AppBar">
-        <AppBar>
+        <AppBar position="sticky">
             <Toolbar>
                 <img src={logo} className="App-logo" alt="logo" />
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: "left" }}>
                     Developer Portfolio 
                 </Typography>
                 <Button color="inherit">About Me</Button>
